@@ -1,0 +1,390 @@
+{
+  "profile": {
+    "id": "profile-qazi-momin",
+    "fullName": "Qazi Momin Afridi",
+    "fullNameUr": "قاضی مومن آفریدی",
+    "fullNamePs": "قاضی مومن اپریدی",
+    "location": "District Khyber, Khyber Pakhtunkhwa, Pakistan",
+    "locationUr": "ضلع خیبر، خیبر پختونخوا، پاکستان",
+    "locationPs": "خیبر ولسوالۍ، خیبر پښتونخوا، پاکستان",
+    "role": "Public Figure & Community Representative",
+    "roleUr": "عوامی و سماجی نمائندہ",
+    "rolePs": "ولسی او ټولنیز استازی",
+    "verifiedPartyAffiliation": "Independent Community Representative (Documented Civic Record)",
+    "bioEn": "Qazi Momin Afridi is a public figure and dedicated community representative from District Khyber, Khyber Pakhtunkhwa. His public engagement centers on grassroots community advocacy, peaceful conflict resolution through traditional tribal jirgas, educational equity, and the socio-economic mainstreaming of the merged tribal districts. Known for transparent community dialogue and youth engagement, his documented work addresses the immediate infrastructural, healthcare, and educational needs of the residents of Khyber.",
+    "bioUr": "قاضی مومن آفریدی ضلع خیبر، خیبر پختونخوا سے تعلق رکھنے والے ایک نمایاں عوامی اور سماجی رہنما ہیں۔ ان کی عوامی خدمات کا بنیادی محور قبائلی اضلاع کے انضمام کے بعد عوام کے بنیادی حقوق، تعلیمی اصلاحات، روایتی جرگہ نظام کے ذریعے قبائلی امن و آشتی کا فروغ، اور نوجوانوں کے لیے روزگار کے مواقع پیدا کرنا ہے۔ وہ شفافیت اور عوامی رابطے پر یقین رکھتے ہیں۔",
+    "bioPs": "قاضی مومن اپریدی د خیبر پښتونخوا د خیبر ولسوالۍ یو پیژندل شوی ولسی او ټولنیز مشر دی. د ده هڅې او فعالیتونه د ادغام شویو سیمو د پرمختګ، روایتي جرګو له لارې د سولې ټینګښت، د ځوانانو د روزنې او د سیمې د خلکو د اساسي حقونو ترلاسه کولو ته ځانګړې شوې دي.",
+    "profilePhoto": "/src/assets/images/qazi_portrait_1790944357763.jpg",
+    "coverPhoto": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+    "languages": [
+      "Pashto (Native)",
+      "Urdu (Fluent)",
+      "English (Professional)"
+    ],
+    "educationVerified": [
+      "Documented Academic Credentials Verified by Institutional Records (Available via Secretariat)"
+    ],
+    "experience": [
+      "Community Representation & Public Service Advocate, Khyber District",
+      "Organizer & Participant in Civic Development Assemblies and Peace Jirgas",
+      "Youth Empowerment Initiatives Coordinator in Newly Merged Districts (NMDs)"
+    ],
+    "verifiedDesignations": [
+      "Public Representative & Social Advocate",
+      "Convenor of Khyber Community Welfare Initiatives"
+    ]
+  },
+  "timeline": [
+    {
+      "id": "tl-1",
+      "year": "2019",
+      "titleEn": "Civic Engagement on Post-Merger District Rights",
+      "titleUr": "انضمام کے بعد قبائلی اضلاع کے حقوق کی تحریک",
+      "titlePs": "د نویو یوځای شویو سیمو د حقوقو ملاتړ",
+      "descriptionEn": "Active participation in civic dialogues advocating for swift allocation of developmental funds, constitutional rights, and public infrastructure upgrades for District Khyber following the 25th Constitutional Amendment.",
+      "descriptionUr": "25ویں آئینی ترمیم کے بعد ضلع خیبر کے لیے ترقیاتی فنڈز کے بر وقت اجراء اور بنیادی حقوق کے حصول کے لیے عوامی اور آئینی فورمز پر بھرپور شرکت۔",
+      "descriptionPs": "د اساسي قانون ۲۵م تعدیل نه وروسته د خیبر ولسوالۍ د پرمختیايي بودیجې او اساسي حقوقو لپاره په ولسی غونډو کې ګډون.",
+      "category": "Civic",
+      "source": "Khyber District Civic Dialogue Records & Press Archives",
+      "sourceUrl": "https://example.com/sources/khyber-civic-dialogue",
+      "imageUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "order": 1
+    },
+    {
+      "id": "tl-2",
+      "year": "2021",
+      "titleEn": "Facilitation of Traditional Peace Jirgas in Landi Kotal & Bara",
+      "titleUr": "لنڈی کوتل اور باڑہ میں امن جرگوں کا انعقاد",
+      "titlePs": "په لنډي کوتل او باړه کې د روغې جوړې جرګې",
+      "descriptionEn": "Facilitated local dispute resolution councils alongside tribal elders, promoting peaceful co-existence, communal harmony, and collaborative civic progress.",
+      "descriptionUr": "قبائلی عمائدین اور مشران کے ہمراہ باہمی تنازعات کے پرامن حل کے لیے روایتی اور مصالحتی جرگوں کا کامیاب انعقاد۔",
+      "descriptionPs": "د قومي مشرانو په ملګرتیا د شخړو د هواري او ولسی امن لپاره د دودیزو جرګو تنظیمول.",
+      "category": "Peace",
+      "source": "Community Jirga Register & Tribal Elders Assembly Report",
+      "sourceUrl": "https://example.com/sources/jirga-records",
+      "imageUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "order": 2
+    },
+    {
+      "id": "tl-3",
+      "year": "2023",
+      "titleEn": "Youth Skill Development & Educational Equity Campaign",
+      "titleUr": "تعلیم و نوجوانوں کی ہنر مندی کی مہم",
+      "titlePs": "د ځوانانو د زده کړې او مهارتونو کمپاین",
+      "descriptionEn": "Launched regional consultative forums to expand vocational training centers, solarization of public schools, and internet connectivity for students across Khyber.",
+      "descriptionUr": "خیبر کے اسکولوں کی سولرائزیشن، طلباء کے لیے انٹرنیٹ رسائی اور فنی تربیتی اداروں کے قیام کے لیے وسیع عوامی و انتظامی مہم۔",
+      "descriptionPs": "د زده کوونکو د اسانتیاوو، انټرنیټ او تخنیکي زده کړو د مرکزونو جوړولو لپاره منظمې هلې ځلې.",
+      "category": "Community",
+      "source": "Khyber Education Forum Documentation",
+      "sourceUrl": "https://example.com/sources/education-forum",
+      "imageUrl": "/src/assets/images/youth_education_1790944414827.jpg",
+      "order": 3
+    },
+    {
+      "id": "tl-4",
+      "year": "2025 - Present",
+      "titleEn": "Public Representation for Healthcare & Clean Water Infrastructure",
+      "titleUr": "صحت و پینے کے صاف پانی کی فراہمی کے اقدامات",
+      "titlePs": "د روغتیا او پاکو اوبو د پروژو استازیتوب",
+      "descriptionEn": "Consistently advocating before provincial departments for upgraded Basic Health Units (BHUs) and gravity water supply schemes in remote tehsils of Khyber.",
+      "descriptionUr": "خیبر کی دور دراز تحصیلوں میں بنیادی مراکز صحت کی اپ گریڈیشن اور پینے کے صاف پانی کی فراہمی کے لیے حکومتی فورمز پر مستقل نمائندگی۔",
+      "descriptionPs": "د خیبر لیرې پرتو سیمو کې د کلینیکونو او پاکو اوبو پروژو پلي کولو لپاره دوامدارې هڅې.",
+      "category": "Public Representation",
+      "source": "District Development Review 2025-2026",
+      "sourceUrl": "https://example.com/sources/district-health-review",
+      "imageUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+      "order": 4
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "titleEn": "Advocacy for Merged Districts Development Funds",
+      "titleUr": "ضم شدہ اضلاع کے ترقیاتی فنڈز کی وکالت",
+      "titlePs": "د ادغام شویو ولسوالیو د پرمختیایي بودیجې غوښتنه",
+      "category": "Development of Merged Districts",
+      "descriptionEn": "Systematic public advocacy urging full transparency and timely implementation of Promised Accelerated Implementation Programme (AIP) projects in District Khyber.",
+      "descriptionUr": "ضلع خیبر میں ترقیاتی منصوبوں کے فوری نفاذ اور شفافیت کو یقینی بنانے کے لیے تمام قانونی و جمہوری راستوں کا استعمال۔",
+      "descriptionPs": "په خیبر ولسوالۍ کې د بیړني پرمختیایي پروګرام (AIP) د رڼو او پروخت پلي کیدو لپاره غږ پورته کول.",
+      "imageUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+      "date": "2025-11-14",
+      "location": "Khyber Pass / Jamrud, Khyber",
+      "source": "Verified Administrative Press Release",
+      "sourceUrl": "https://example.com/records/aip-khyber"
+    },
+    {
+      "id": "act-2",
+      "titleEn": "Tribal Jirga Reconciliation & Peace Initiatives",
+      "titleUr": "قبائلی جرگوں کے ذریعے تنازعات کا پرامن تصفیہ",
+      "titlePs": "د ولسی جرګې له لارې د روغې جوړې پروګرام",
+      "category": "Peace & Community Initiatives",
+      "descriptionEn": "Active mediator in community gatherings dedicated to restoring communal trust, settling territorial boundaries peacefully, and sustaining regional stability.",
+      "descriptionUr": "علاقائی رواداری اور بھائی چارے کے فروغ کے لیے قبائلی جرگوں میں کلیدی کردار اور تنازعات کا باعزت تصفیہ۔",
+      "descriptionPs": "په سیمه کې د قومي ورورولۍ پیاوړتیا او د ولسی ستونزو د باعزته حل لپاره په جرګو کې فعال رول.",
+      "imageUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "date": "2025-08-20",
+      "location": "Landi Kotal, District Khyber",
+      "source": "Tribal Elders Council Minutes",
+      "sourceUrl": "https://example.com/records/elders-council"
+    },
+    {
+      "id": "act-3",
+      "titleEn": "Youth Education & Digital Literacy Workshops",
+      "titleUr": "نوجوانوں کی تعلیم اور ڈیجیٹل خواندگی کے سیمینار",
+      "titlePs": "د ځوانانو لپاره د ډیجیټل مهارتونو سمینارونه",
+      "category": "Youth Engagement",
+      "descriptionEn": "Organized career counseling and scholarship guidance sessions for matric and intermediate students across Bara and Jamrud.",
+      "descriptionUr": "ضلع خیبر کے ہونہار مگر پسماندہ طلباء کے لیے اسکالرشپ رہنمائی اور جدید کیریئر کاؤنسلنگ کا باقاعدہ اہتمام۔",
+      "descriptionPs": "د باړې او جمرود زده کوونکو لپاره د سکالرشپونو او مسلکي زده کړو لارښوونې ورکشاپونه.",
+      "imageUrl": "/src/assets/images/youth_education_1790944414827.jpg",
+      "date": "2026-01-18",
+      "location": "Jamrud, District Khyber",
+      "source": "Khyber Students Union Joint Release",
+      "sourceUrl": "https://example.com/records/youth-guidance"
+    },
+    {
+      "id": "act-4",
+      "titleEn": "Clean Water & Potable Supply Representation",
+      "titleUr": "پینے کے صاف پانی کی دستیابی کا مطالبہ",
+      "titlePs": "د پاکو اوبو رسولو پروژو تعقیب",
+      "category": "Local Issues",
+      "descriptionEn": "Documented presentation of water scarcity data from mountain settlements to Public Health Engineering departments.",
+      "descriptionUr": "پہاڑی علاقوں میں پانی کی قلت کا مستند جائزہ اور پبلک ہیلتھ انجینئرنگ ڈیپارٹمنٹ کو فوری اقدامات کی سفارش۔",
+      "descriptionPs": "د غره ییزو سیمو د اوبو د ستونزې مستند راپور او اړوندو ادارو ته د پروژو وړاندیز.",
+      "imageUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+      "date": "2026-03-02",
+      "location": "Bara Valley, District Khyber",
+      "source": "PHE Consultation Summary",
+      "sourceUrl": "https://example.com/records/phe-water"
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "titleEn": "Qazi Momin Afridi Addresses Public Gathering on Border Trade & Local Livelihoods",
+      "titleUr": "قاضی مومن آفریدی کا طورخم بارڈر تجارت اور مقامی روزگار پر خطاب",
+      "titlePs": "قاضی مومن اپریدی د تورخم پولې د سوداګرۍ او ځایي روزګار په اړه وینا وکړه",
+      "excerptEn": "Highlights the critical importance of uninterrupted transit and transparent clearance at Torkham border to safeguard the livelihood of Khyber transport workers and traders.",
+      "excerptUr": "طورخم بارڈر پر مقامی تاجروں اور ٹرانسپورٹ ورکرز کے روزگار کے تحفظ اور تجارتی عمل کو سہل بنانے پر زور۔",
+      "excerptPs": "په تورخم پوله د ترانزیتي اسانتیاوو او د ځایي ټرانسپورټرانو او سوداګرو د ستونزو د حل غوښتنه وکړه.",
+      "contentEn": "Speaking to a consultative assembly of local business representatives and transport associations in Landi Kotal, Qazi Momin Afridi articulated the socio-economic pulse of the frontier. He underscored that regional economic resilience depends upon open, lawful commerce and expeditious customs processing, providing thousands of young families with dignified sustenance.",
+      "contentUr": "لنڈی کوتل میں منعقدہ مشاورتی اجلاس میں قاضی مومن آفریدی نے سرحدی تجارت کی بحالی اور مقامی نوجوانوں کو روزگار کے شفاف مواقع فراہم کرنے پر مفصل گفتگو کی۔ انہوں نے متعلقہ حکام سے مطالبہ کیا کہ تجارتی رکاوٹیں دور کی جائیں۔",
+      "contentPs": "په لنډي کوتل کې د سیمه ییزو سوداګرو په غونډه کې قاضی مومن اپریدی ټینګار وکړ چې د ولس اقتصادي ژوند له پولې سره تړلی دی او پکار ده چې تجارتي اسانتیاوې برابرې شي.",
+      "category": "Commerce & Civic Voice",
+      "date": "2026-02-10",
+      "source": "Frontier Regional News Bureau",
+      "sourceUrl": "https://example.com/news/torkham-trade-address",
+      "imageUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "isFeatured": true,
+      "isPublished": true
+    },
+    {
+      "id": "news-2",
+      "titleEn": "Educational Infrastructure Review: Demand for Modern College in Tirah Valley",
+      "titleUr": "وادی تیراہ میں ڈگری کالج کے قیام کا عوامی مطالبہ",
+      "titlePs": "په تیراه دره کې د نوي کالج د جوړیدو غوښتنه",
+      "excerptEn": "Calls for urgent provincial budgeting to erect modern higher educational facilities in Tirah, ensuring girls and boys have accessible tertiary education.",
+      "excerptUr": "وادی تیراہ کے طلباء و طالبات کے لیے اعلیٰ تعلیمی ادارے اور ڈگری کالج کی فوری منظوری کا مطالبہ۔",
+      "excerptPs": "د تیراه درې د زده کوونکو لپاره د عصري لوړو زده کړو د مرکزونو جوړولو جدي غوښتنه.",
+      "contentEn": "In a factual policy brief presented to regional educators, the dire need for post-secondary educational colleges in remote parts of Tirah was documented. The presentation detailed commuting distances that currently force hundreds of youth out of education prematurely.",
+      "contentUr": "تعلیمی ماہرین اور معززین کے وفد کے ساتھ ملاقات میں تیراہ میں کالج کی عدم موجودگی کی تفصیلات پیش کی گئیں تاکہ خطے کے ہونہار نوجوان اعلیٰ تعلیم سے محروم نہ رہیں۔",
+      "contentPs": "په تیراه دره کې د لوړو زده کړو د نشتوالي په اړه تفصیلي راپور وړاندې شو او حکومت ته یې د سمدستي اقدام غږ وکړ.",
+      "category": "Education",
+      "date": "2026-01-22",
+      "source": "Khyber Chronicle Editorial",
+      "sourceUrl": "https://example.com/news/tirah-education",
+      "imageUrl": "/src/assets/images/youth_education_1790944414827.jpg",
+      "isFeatured": false,
+      "isPublished": true
+    },
+    {
+      "id": "news-3",
+      "titleEn": "Community Health Camp Launched in Rural Khyber Settlement",
+      "titleUr": "دیہی خیبر میں مفت طبی کیمپ اور ادویات کی فراہمی",
+      "titlePs": "د خیبر په کلیواله سیمه کې د وړیا روغتیایي کلینیک پرانیسته",
+      "excerptEn": "Facilitated volunteer physician teams and medication supply for vulnerable families in coordination with local civil society.",
+      "excerptUr": "مقامی فلاحی تنظیموں کے اشتراک سے مستحق خاندانوں کے لیے فری میڈیکل کیمپ کا کامیاب انعقاد۔",
+      "excerptPs": "د ولسی ټولنو په همکارۍ اړمنو کورنیو ته د ډاکټرانو وړیا معاینات او درمل برابر شول.",
+      "contentEn": "Over 600 residents received consultations and preventive medicine during a two-day volunteer clinic arranged in partnership with licensed health professionals.",
+      "contentUr": "دو روزہ میڈیکل کیمپ کے دوران سینکڑوں مریضوں کو مفت طبی مشورہ اور ادویات فراہم کی گئیں جس کو عوام نے بے حد سراہا۔",
+      "contentPs": "په دوه ورځني کمپ کې تر ۶۰۰ زیاتو کسانو ته وړیا درملنه او درمل ورسول شول.",
+      "category": "Public Health",
+      "date": "2025-12-05",
+      "source": "District Health Bulletin",
+      "sourceUrl": "https://example.com/news/health-camp-khyber",
+      "imageUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+      "isFeatured": false,
+      "isPublished": true
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-1",
+      "titleEn": "Consultative Jirga with Elders",
+      "titleUr": "قبائلی عمائدین کے ساتھ مشاورتی جرگہ",
+      "titlePs": "د قومي مشرانو سره مشورتي جرګه",
+      "albumId": "alb-1",
+      "category": "Jirgas",
+      "imageUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "date": "2025-10-12",
+      "location": "Landi Kotal",
+      "captionEn": "Tribal elders convening to discuss communal welfare, dispute resolution, and local priorities.",
+      "captionUr": "مقامی مسائل اور امن کے قیام کے لیے قبائلی عمائدین کا روایتی مشاورتی اجلاس۔",
+      "captionPs": "د سیمه ییزو ستونزو او سولې د لارو چارو لپاره د مشرانو جرګه."
+    },
+    {
+      "id": "gal-2",
+      "titleEn": "Youth Leadership & Guidance Session",
+      "titleUr": "نوجوانوں کے لیے فکری و رہنمائی نشست",
+      "titlePs": "د ځوانانو د روزنې او هڅونې غونډه",
+      "albumId": "alb-2",
+      "category": "Youth Events",
+      "imageUrl": "/src/assets/images/youth_education_1790944414827.jpg",
+      "date": "2026-01-15",
+      "location": "Jamrud",
+      "captionEn": "Engaging with young students to encourage technical education and civic contribution.",
+      "captionUr": "طلباء اور نوجوانوں کو جدید تعلیم اور مثبت سماجی سرگرمیوں کی ترغیب۔",
+      "captionPs": "د زده کوونکو د هڅونې او د روښانه راتلونکي لپاره ځانګړې ناسته."
+    },
+    {
+      "id": "gal-3",
+      "titleEn": "Historic Mountain Pass of Khyber",
+      "titleUr": "تاریخی درہ خیبر کا پرشکوہ منظر",
+      "titlePs": "د تاریخي خیبر درې ښکلی لید",
+      "albumId": "alb-3",
+      "category": "Public Events",
+      "imageUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+      "date": "2026-02-01",
+      "location": "Khyber Pass",
+      "captionEn": "Documenting the geography, heritage, and resilient people of District Khyber.",
+      "captionUr": "ضلع خیبر کا تاریخی ورثہ اور اس خطے کے غیور اور باوقار عوام۔",
+      "captionPs": "د خیبر تاریخ، برم او د دې غیرتمن ولس تاریخي سیمه."
+    },
+    {
+      "id": "gal-4",
+      "titleEn": "Dignified Studio Profile Portrait",
+      "titleUr": "قاضی مومن آفریدی - پروقار پورٹریٹ",
+      "titlePs": "قاضی مومن اپریدی - باوقاره انځور",
+      "albumId": "alb-3",
+      "category": "Other",
+      "imageUrl": "/src/assets/images/qazi_portrait_1790944357763.jpg",
+      "date": "2026-02-28",
+      "location": "Peshawar / Khyber",
+      "captionEn": "Official portrait for the public representation profile archive.",
+      "captionUr": "عوامی اور ادارتی ریکارڈ کے لیے سرکاری پورٹریٹ۔",
+      "captionPs": "د رسمي او ولسی اسنادو لپاره مستند انځور."
+    }
+  ],
+  "albums": [
+    {
+      "id": "alb-1",
+      "nameEn": "Tribal Jirgas & Peace Councils",
+      "nameUr": "قبائلی جرگے و امن مجالس",
+      "namePs": "قومي جرګې او د سولې غونډې",
+      "descriptionEn": "Documented proceedings of community dialogues and traditional mediation assemblies.",
+      "descriptionUr": "قبائلی روایات اور باہمی امن کے لیے منعقدہ جرگوں کا تصویری ریکارڈ۔",
+      "descriptionPs": "د ولسی یووالي او جرګو مستند انځورونه.",
+      "coverUrl": "/src/assets/images/community_jirga_1790944393982.jpg"
+    },
+    {
+      "id": "alb-2",
+      "nameEn": "Youth & Education Seminars",
+      "nameUr": "نوجوانان و تعلیم و تربیت",
+      "namePs": "ځوانان او علمي پروګرامونه",
+      "descriptionEn": "Educational empowerment, scholarship guidance, and skill awareness events.",
+      "descriptionUr": "طلباء کی رہنمائی اور تعلیمی منصوبوں کے مناظر۔",
+      "descriptionPs": "د لوړو زده کړو او ځوانانو د روزنې شیبې.",
+      "coverUrl": "/src/assets/images/youth_education_1790944414827.jpg"
+    },
+    {
+      "id": "alb-3",
+      "nameEn": "District Landscape & Heritage",
+      "nameUr": "ضلع خیبر کی تاریخ و مناظر",
+      "namePs": "د خیبر ښکلا او تاریخ",
+      "descriptionEn": "Scenic vistas and cultural heritage of the historic Khyber Pass.",
+      "descriptionUr": "تاریخی درہ خیبر کی قدرتی خوبصورتی اور روایات۔",
+      "descriptionPs": "د خیبر پښتونخوا د تاریخي سیمو منظرې.",
+      "coverUrl": "/src/assets/images/khyber_mountains_1790944376566.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "titleEn": "Address on Fundamental Civic Rights for Merged Districts",
+      "titleUr": "ضم شدہ قبائلی اضلاع کے آئینی و ترقیاتی حقوق پر تفصیلی خطاب",
+      "titlePs": "د ادغام شویو سیمو د اساسي حقوقو په هکله مهمه وینا",
+      "descriptionEn": "Public speech highlighting constitutional guarantees, local governance strengthening, and equitable budgetary allocations for District Khyber.",
+      "descriptionUr": "ضلع خیبر میں بلدیاتی نظام کے استحکام اور مساوی فنڈز کی فراہمی پر عوامی اجتماع سے فکر انگیز خطاب۔",
+      "descriptionPs": "په خیبر کې د ولسی ادارو د پیاوړتیا او د بودیجې د عادلانه ویش په هکله وینا.",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "platform": "youtube",
+      "thumbnailUrl": "/src/assets/images/community_jirga_1790944393982.jpg",
+      "date": "2025-11-20",
+      "source": "Verified Community Media Channel"
+    },
+    {
+      "id": "vid-2",
+      "titleEn": "Dialogue with Local Youth on Employment & Vocational Horizons",
+      "titleUr": "نوجوانوں کے ساتھ روزگار و فنی مہارتوں پر مکالمہ",
+      "titlePs": "د ځوانانو د روزګار او فني زده کړو په باب بحث",
+      "descriptionEn": "Interactive session exploring self-employment, IT literacy, and cross-border commercial opportunities for youth in Khyber.",
+      "descriptionUr": "خیبر کے نوجوانوں کے لیے فری لانسنگ، آئی ٹی مہارتوں اور خود روزگاری کے مواقع پر مکالماتی سیشن۔",
+      "descriptionPs": "د خیبر د ځوانانو لپاره د عصري ټکنالوجۍ او د کار موندلو د لارو چارو په اړه خبرې.",
+      "videoUrl": "https://www.facebook.com/watch/?v=1015823456789",
+      "platform": "facebook",
+      "thumbnailUrl": "/src/assets/images/youth_education_1790944414827.jpg",
+      "date": "2026-01-29",
+      "source": "Khyber Youth Council Live Broadcast"
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://facebook.com/QaziMominAfridiOfficial",
+    "twitter": "https://x.com/QaziMominAfridi",
+    "instagram": "https://instagram.com/qazimominafridi",
+    "youtube": "https://youtube.com/@QaziMominAfridiOfficial",
+    "tiktok": "https://tiktok.com/@qazimominafridi",
+    "whatsapp": "https://wa.me/923000000000"
+  },
+  "contactMessages": [
+    {
+      "id": "msg-seed-1",
+      "name": "Taimoor Khan Afridi",
+      "email": "taimoor.afridi@example.com",
+      "phone": "+92 301 2345678",
+      "subject": "Inquiry regarding Bara Valley Drinking Water Proposal",
+      "message": "Respected Qazi Sahib, we represent local residents of Bara requesting an update on the public health engineering water pipeline survey.",
+      "isRead": false,
+      "createdAt": "2026-03-28T10:15:00.000Z"
+    }
+  ],
+  "siteSettings": {
+    "siteTitle": "Qazi Momin Afridi | Official Public Profile",
+    "siteSubtitleEn": "Public Profile • Community Service • District Khyber",
+    "siteSubtitleUr": "عوامی پروفائل • سماجی خدمت • ضلع خیبر",
+    "siteSubtitlePs": "ولسي پېژندنه • ټولنیز خدمت • خیبر ولسوالۍ",
+    "heroImage": "/src/assets/images/khyber_mountains_1790944376566.jpg",
+    "heroQuoteEn": "True public service is rooted in listening to our community, preserving honor, and advancing justice without compromise.",
+    "heroQuoteUr": "حقیقی عوامی خدمت اپنے لوگوں کی آواز سننے، وقار کی پاسداری اور غیر متزلزل انصاف کے حصول کا نام ہے۔",
+    "heroQuotePs": "ریښتینی ولسی خدمت د خپلو خلکو غږ اوریدلو، د عزت ساتلو او تلپاتې عدالت ته د ژمنتیا نوم دی.",
+    "contactEmail": "secretariat@qazimominafridi.pk",
+    "contactPhone": "+92 91 5000000",
+    "officeAddressEn": "Community Secretariat, Main Road, Landi Kotal & Jamrud, District Khyber, KP, Pakistan",
+    "officeAddressUr": "پبلک سیکریٹریٹ، مین روڈ، لنڈی کوتل و جمرود، ضلع خیبر، خیبر پختونخوا، پاکستان",
+    "officeAddressPs": "ولسي دارالانشاء، عمومي سړک، لنډي کوتل او جمرود، خیبر ولسوالۍ، پاکستان",
+    "publicNoticeEn": "Notice of Verification: Every public statement and civic milestone published here is maintained under strict factual documentation.",
+    "publicNoticeUr": "تصدیقی وضاحت: اس پلیٹ فارم پر درج ہر عوامی سرگرمی اور سنگ میل مصدقہ عوامی ریکارڈ پر مبنی ہے۔",
+    "publicNoticePs": "د تصدیق یادښت: په دې رسمي پاڼه کې ټول خپاره شوي معلومات په کره او باوري اسنادو ولاړ دي.",
+    "sourcesNoteEn": "Our Public Record & Sources archive allows complete verification of every documented community initiative, official address, and civic undertaking.",
+    "sourcesNoteUr": "ہمارا پبلک ریکارڈ اور ذرائع سیکشن ہر درج شدہ عوامی اقدام، خطاب اور سرگرمی کی آزادانہ تصدیق کا موقع فراہم کرتا ہے۔",
+    "sourcesNotePs": "زموږ د سرچینو او اسنادو برخه هر چا ته اجازه ورکوي چې د ټولو فعالیتونو کره والی په خپله وګوري."
+  },
+  "users": [
+    {
+      "id": "user-admin-1",
+      "username": "admin",
+      "passwordHash": "dd0d9ad06e9d69d3ba54e3f4b3a2d9b4e04545e46c7597cc3d371d92e1e892a7",
+      "role": "admin",
+      "name": "Site Administrator"
+    }
+  ]
+}
