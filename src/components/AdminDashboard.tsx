@@ -185,17 +185,41 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
   };
 
   const fetchMessages = async () => {
-    if (!token) return;
-    try {
-      const res = await fetch('/api/messages', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setMessages(data);
+    let serverMsgs: ContactMessage[] = [];
+    if (token) {
+      try {
+        const res = await fetch('/api/messages', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (res.ok) {
+          serverMsgs = await res.json();
+        }
+      } catch (err) {
+        console.warn('Could not fetch server messages:', err);
       }
-    } catch (err) {
-      console.error('Failed to load messages', err);
+    }
+
+    // Merge with any cached offline messages
+    try {
+      const localRaw = localStorage.getItem('qma_offline_messages');
+      const localMsgs: ContactMessage[] = localRaw ? JSON.parse(localRaw) : [];
+      const combinedMap = new Map<string, ContactMessage>();
+
+      // Server messages take priority
+      serverMsgs.forEach((m) => combinedMap.set(m.id, m));
+      // Local messages added if not already present
+      localMsgs.forEach((m) => {
+        if (!combinedMap.has(m.id)) {
+          combinedMap.set(m.id, m);
+        }
+      });
+
+      const merged = Array.from(combinedMap.values()).sort(
+        (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      );
+      setMessages(merged);
+    } catch {
+      setMessages(serverMsgs);
     }
   };
 

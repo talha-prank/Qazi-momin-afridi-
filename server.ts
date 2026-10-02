@@ -396,23 +396,18 @@ app.get('/api/messages', requireAuth, (_req: Request, res: Response) => {
 });
 
 app.post('/api/messages', (req: Request, res: Response) => {
-  const { name, email, phone, subject, message, honeypot } = req.body;
-
-  // Spam bot trap: honeypot field must be empty
-  if (honeypot) {
-    return res.status(400).json({ error: 'Spam detected' });
-  }
+  const { name, email, phone, subject, message } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Name, email, and message are required' });
   }
 
-  // Basic rate limiting: max 4 messages per IP per 10 minutes
-  const ip = req.ip || 'unknown';
+  // Generous rate limiting: max 60 messages per IP per 10 minutes
+  const ip = (req.headers['x-forwarded-for'] as string) || req.ip || 'unknown';
   const now = Date.now();
   const timestamps = (ipSubmissionTimestamps.get(ip) || []).filter(t => now - t < 10 * 60 * 1000);
-  if (timestamps.length >= 4) {
-    return res.status(429).json({ error: 'Too many submissions. Please wait a few minutes before sending another message.' });
+  if (timestamps.length >= 60) {
+    return res.status(429).json({ error: 'Too many submissions. Please wait a moment.' });
   }
   timestamps.push(now);
   ipSubmissionTimestamps.set(ip, timestamps);
@@ -420,11 +415,11 @@ app.post('/api/messages', (req: Request, res: Response) => {
   const db = getDb();
   const newMessage: ContactMessage = {
     id: `msg-${Date.now()}`,
-    name: name.slice(0, 100),
-    email: email.slice(0, 100),
-    phone: (phone || '').slice(0, 30),
-    subject: (subject || 'General Inquiry').slice(0, 150),
-    message: message.slice(0, 3000),
+    name: String(name).slice(0, 100),
+    email: String(email).slice(0, 100),
+    phone: String(phone || '').slice(0, 30),
+    subject: String(subject || 'General Inquiry').slice(0, 150),
+    message: String(message).slice(0, 3000),
     isRead: false,
     createdAt: new Date().toISOString()
   };
