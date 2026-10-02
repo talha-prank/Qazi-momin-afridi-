@@ -15,6 +15,7 @@ import {
   ExternalLink,
   ShieldCheck
 } from 'lucide-react';
+import { ScrollReveal3D } from './ScrollReveal3D';
 
 interface ActivitiesSectionProps {
   currentLang: Language;
@@ -69,40 +70,44 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
-            <Compass className="w-3.5 h-3.5 text-amber-400" />
-            <span>Documented Public Engagements</span>
+        <ScrollReveal3D depth={-70} rotateX={5}>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
+              <Compass className="w-3.5 h-3.5 text-amber-400" />
+              <span>Documented Public Engagements</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
+              {t.activities.sectionTitle}
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              {t.activities.sectionSubtitle}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
-            {t.activities.sectionTitle}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            {t.activities.sectionSubtitle}
-          </p>
-        </div>
+        </ScrollReveal3D>
 
         {/* Interactive Category Filter Bar */}
-        <div className="flex items-center justify-center flex-wrap gap-2 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              type="button"
-              onClick={() => setSelectedCategory(cat.value)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
-                selectedCategory === cat.value
-                  ? 'bg-emerald-800 text-amber-200 border border-amber-400/40 shadow-md shadow-emerald-950'
-                  : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 hover:bg-emerald-950 border border-emerald-900/30'
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal3D delay={80} depth={-50} rotateX={3}>
+          <div className="flex items-center justify-center flex-wrap gap-2 mb-12">
+            {categories.map((cat) => (
+              <button
+                key={cat.value}
+                type="button"
+                onClick={() => setSelectedCategory(cat.value)}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
+                  selectedCategory === cat.value
+                    ? 'bg-emerald-800 text-amber-200 border border-amber-400/40 shadow-md shadow-emerald-950'
+                    : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 hover:bg-emerald-950 border border-emerald-900/30'
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal3D>
 
         {/* Activities Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {filteredActivities.map((act) => {
+          {filteredActivities.map((act, index) => {
             const title =
               currentLang === 'ur'
                 ? act.titleUr
@@ -118,10 +123,16 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
                 : act.descriptionEn;
 
             return (
-              <div
+              <ScrollReveal3D
                 key={act.id}
-                className="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-emerald-800/30 flex flex-col group"
+                delay={(index % 4) * 90}
+                depth={-80}
+                rotateX={6}
+                className="h-full"
               >
+                <div
+                  className="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-emerald-800/30 flex flex-col group h-full"
+                >
                 {/* Image Header with Category Badge */}
                 <div className="relative h-56 sm:h-64 overflow-hidden bg-slate-950">
                   <img
@@ -188,6 +199,7 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
 
                 </div>
               </div>
+              </ScrollReveal3D>
             );
           })}
         </div>

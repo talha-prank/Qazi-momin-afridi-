@@ -14,7 +14,7 @@
     "bioEn": "Qazi Momin Afridi is a public figure and dedicated community representative from District Khyber, Khyber Pakhtunkhwa. His public engagement centers on grassroots community advocacy, peaceful conflict resolution through traditional tribal jirgas, educational equity, and the socio-economic mainstreaming of the merged tribal districts. Known for transparent community dialogue and youth engagement, his documented work addresses the immediate infrastructural, healthcare, and educational needs of the residents of Khyber.",
     "bioUr": "قاضی مومن آفریدی ضلع خیبر، خیبر پختونخوا سے تعلق رکھنے والے ایک نمایاں عوامی اور سماجی رہنما ہیں۔ ان کی عوامی خدمات کا بنیادی محور قبائلی اضلاع کے انضمام کے بعد عوام کے بنیادی حقوق، تعلیمی اصلاحات، روایتی جرگہ نظام کے ذریعے قبائلی امن و آشتی کا فروغ، اور نوجوانوں کے لیے روزگار کے مواقع پیدا کرنا ہے۔ وہ شفافیت اور عوامی رابطے پر یقین رکھتے ہیں۔",
     "bioPs": "قاضی مومن اپریدی د خیبر پښتونخوا د خیبر ولسوالۍ یو پیژندل شوی ولسی او ټولنیز مشر دی. د ده هڅې او فعالیتونه د ادغام شویو سیمو د پرمختګ، روایتي جرګو له لارې د سولې ټینګښت، د ځوانانو د روزنې او د سیمې د خلکو د اساسي حقونو ترلاسه کولو ته ځانګړې شوې دي.",
-    "profilePhoto": "/src/assets/images/qazi_portrait_1790944357763.jpg",
+    "profilePhoto": "https://i.postimg.cc/qq9dHzdG/FB-IMG-1790968641902.jpg",
     "coverPhoto": "/src/assets/images/khyber_mountains_1790944376566.jpg",
     "languages": [
       "Pashto (Native)",
@@ -267,12 +267,12 @@
       "titlePs": "قاضی مومن اپریدی - باوقاره انځور",
       "albumId": "alb-3",
       "category": "Other",
-      "imageUrl": "/src/assets/images/qazi_portrait_1790944357763.jpg",
-      "date": "2026-02-28",
-      "location": "Peshawar / Khyber",
-      "captionEn": "Official portrait for the public representation profile archive.",
-      "captionUr": "عوامی اور ادارتی ریکارڈ کے لیے سرکاری پورٹریٹ۔",
-      "captionPs": "د رسمي او ولسی اسنادو لپاره مستند انځور."
+      "imageUrl": "https://i.postimg.cc/qq9dHzdG/FB-IMG-1790968641902.jpg",
+      "date": "2026-03-01",
+      "location": "Khyber Pakhtunkhwa",
+      "captionEn": "Official verified portrait for the public representation profile archive of Qazi Momin Afridi.",
+      "captionUr": "عوامی اور ادارتی ریکارڈ کے لیے قاضی مومن آفریدی کا سرکاری پورٹریٹ۔",
+      "captionPs": "د قاضی مومن اپریدي د ولسی اسنادو لپاره مستند رسمي انځور."
     }
   ],
   "albums": [
@@ -330,7 +330,7 @@
       "descriptionEn": "Interactive session exploring self-employment, IT literacy, and cross-border commercial opportunities for youth in Khyber.",
       "descriptionUr": "خیبر کے نوجوانوں کے لیے فری لانسنگ، آئی ٹی مہارتوں اور خود روزگاری کے مواقع پر مکالماتی سیشن۔",
       "descriptionPs": "د خیبر د ځوانانو لپاره د عصري ټکنالوجۍ او د کار موندلو د لارو چارو په اړه خبرې.",
-      "videoUrl": "https://www.facebook.com/watch/?v=1015823456789",
+      "videoUrl": "https://www.facebook.com/share/14qgxW8VNEj/",
       "platform": "facebook",
       "thumbnailUrl": "/src/assets/images/youth_education_1790944414827.jpg",
       "date": "2026-01-29",
@@ -338,11 +338,11 @@
     }
   ],
   "socialLinks": {
-    "facebook": "https://facebook.com/QaziMominAfridiOfficial",
+    "facebook": "https://www.facebook.com/share/14qgxW8VNEj/",
     "twitter": "https://x.com/QaziMominAfridi",
-    "instagram": "https://instagram.com/qazimominafridi",
+    "instagram": "https://www.instagram.com/qazimominafridi?stkn=M3J2ODl4dG14ejg5",
     "youtube": "https://youtube.com/@QaziMominAfridiOfficial",
-    "tiktok": "https://tiktok.com/@qazimominafridi",
+    "tiktok": "https://www.tiktok.com/@qazimominkhan4941?_r=1&_t=ZS-9AE7dae5vT6",
     "whatsapp": "https://wa.me/923000000000"
   },
   "contactMessages": [

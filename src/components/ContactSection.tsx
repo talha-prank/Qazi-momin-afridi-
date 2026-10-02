@@ -10,6 +10,7 @@ import {
   AlertCircle,
   ShieldCheck
 } from 'lucide-react';
+import { ScrollReveal3D } from './ScrollReveal3D';
 
 interface ContactSectionProps {
   currentLang: Language;
@@ -109,86 +110,93 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
-            <Mail className="w-3.5 h-3.5 text-amber-400" />
-            <span>Constituent Secretariat</span>
+        <ScrollReveal3D depth={-75} rotateX={5}>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
+              <Mail className="w-3.5 h-3.5 text-amber-400" />
+              <span>Constituent Secretariat</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
+              {t.contact.sectionTitle}
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              {t.contact.sectionSubtitle}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
-            {t.contact.sectionTitle}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            {t.contact.sectionSubtitle}
-          </p>
-        </div>
+        </ScrollReveal3D>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           
           {/* Contact Details Column */}
           <div className="lg:col-span-5 flex flex-col justify-between">
-            <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-800/40 space-y-6">
-              <h3 className="text-xl font-bold text-white font-serif mb-4 flex items-center gap-2">
-                <span className="w-2 h-5 bg-amber-400 rounded-full inline-block" />
-                <span>{t.contact.officialChannels}</span>
-              </h3>
+            <ScrollReveal3D delay={90} depth={-90} rotateX={6} className="h-full">
+              <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-800/40 space-y-6 h-full flex flex-col justify-between shadow-xl">
+                <div>
+                  <h3 className="text-xl font-bold text-white font-serif mb-6 flex items-center gap-2">
+                    <span className="w-2 h-5 bg-amber-400 rounded-full inline-block" />
+                    <span>{t.contact.officialChannels}</span>
+                  </h3>
 
-              <div className="space-y-5 text-xs sm:text-sm">
-                <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-amber-400" />
-                  </div>
-                  <div>
-                    <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
-                      {t.contact.officeAddress}
-                    </span>
-                    <span className="text-slate-200 leading-relaxed block mt-1">
-                      {officeAddress}
-                    </span>
+                  <div className="space-y-5 text-xs sm:text-sm">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-amber-400" />
+                      </div>
+                      <div>
+                        <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
+                          {t.contact.officeAddress}
+                        </span>
+                        <span className="text-slate-200 leading-relaxed block mt-1">
+                          {officeAddress}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
+                        <Mail className="w-5 h-5 text-emerald-400" />
+                      </div>
+                      <div>
+                        <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
+                          Official Inquiries Email
+                        </span>
+                        <a
+                          href={`mailto:${siteSettings.contactEmail}`}
+                          className="text-amber-300 hover:text-amber-200 transition-colors block mt-1 font-medium"
+                        >
+                          {siteSettings.contactEmail}
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
+                        <Phone className="w-5 h-5 text-emerald-400" />
+                      </div>
+                      <div>
+                        <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
+                          {t.contact.directLine}
+                        </span>
+                        <span className="text-slate-200 block mt-1 font-medium">
+                          {siteSettings.contactPhone}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
-                    <Mail className="w-5 h-5 text-emerald-400" />
-                  </div>
-                  <div>
-                    <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
-                      Official Inquiries Email
-                    </span>
-                    <a
-                      href={`mailto:${siteSettings.contactEmail}`}
-                      className="text-amber-300 hover:text-amber-200 transition-colors block mt-1"
-                    >
-                      {siteSettings.contactEmail}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-emerald-950/80 border border-emerald-800/50 text-emerald-400 flex-shrink-0">
-                    <Phone className="w-5 h-5 text-emerald-400" />
-                  </div>
-                  <div>
-                    <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">
-                      {t.contact.directLine}
-                    </span>
-                    <span className="text-slate-200 block mt-1">
-                      {siteSettings.contactPhone}
-                    </span>
-                  </div>
+                <div className="pt-6 border-t border-emerald-900/40 text-xs text-slate-400 flex items-center gap-2 mt-6">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span>{t.contact.spamProtected}</span>
                 </div>
               </div>
-
-              <div className="pt-6 border-t border-emerald-900/40 text-xs text-slate-400 flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                <span>{t.contact.spamProtected}</span>
-              </div>
-            </div>
+            </ScrollReveal3D>
           </div>
 
           {/* Contact Form Column */}
           <div className="lg:col-span-7">
-            <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-800/40">
+            <ScrollReveal3D delay={160} depth={-90} rotateX={6} className="h-full">
+              <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-emerald-800/40 shadow-xl h-full">
               
               {status === 'success' ? (
                 <div className="py-8 text-center flex flex-col items-center">
@@ -337,6 +345,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               )}
 
             </div>
+            </ScrollReveal3D>
           </div>
 
         </div>

@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   Video
 } from 'lucide-react';
+import { ScrollReveal3D } from './ScrollReveal3D';
 
 interface VideosSectionProps {
   currentLang: Language;
@@ -35,22 +36,24 @@ export const VideosSection: React.FC<VideosSectionProps> = ({ currentLang, video
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
-            <Video className="w-3.5 h-3.5 text-amber-400" />
-            <span>Documented Public Addresses</span>
+        <ScrollReveal3D depth={-75} rotateX={5}>
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
+              <Video className="w-3.5 h-3.5 text-amber-400" />
+              <span>Documented Public Addresses</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
+              {t.videos.sectionTitle}
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              {t.videos.sectionSubtitle}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
-            {t.videos.sectionTitle}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            {t.videos.sectionSubtitle}
-          </p>
-        </div>
+        </ScrollReveal3D>
 
-        {/* Video Cards Grid */}
+        {/* Video Cards Grid with 3D Z-axis Entrance */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {videos.map((vid) => {
+          {videos.map((vid, index) => {
             const title =
               currentLang === 'ur'
                 ? vid.titleUr
@@ -66,11 +69,17 @@ export const VideosSection: React.FC<VideosSectionProps> = ({ currentLang, video
                 : vid.descriptionEn;
 
             return (
-              <div
+              <ScrollReveal3D
                 key={vid.id}
-                className="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-emerald-800/40 flex flex-col group cursor-pointer"
-                onClick={() => setSelectedVideo(vid)}
+                delay={(index % 2) * 130}
+                depth={-90}
+                rotateX={6}
+                className="h-full"
               >
+                <div
+                  className="glass-panel glass-panel-hover rounded-2xl overflow-hidden border border-emerald-800/40 flex flex-col group cursor-pointer h-full"
+                  onClick={() => setSelectedVideo(vid)}
+                >
                 {/* Thumbnail with Cinematic Play Button */}
                 <div className="relative aspect-video overflow-hidden bg-slate-950">
                   <img
@@ -123,7 +132,8 @@ export const VideosSection: React.FC<VideosSectionProps> = ({ currentLang, video
                   </div>
                 </div>
 
-              </div>
+                </div>
+              </ScrollReveal3D>
             );
           })}
         </div>

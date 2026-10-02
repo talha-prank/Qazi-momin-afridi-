@@ -12,6 +12,7 @@ import {
   MapPin,
   Calendar
 } from 'lucide-react';
+import { ScrollReveal3D } from './ScrollReveal3D';
 
 interface GallerySectionProps {
   currentLang: Language;
@@ -74,38 +75,42 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ currentLang, gal
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
-            <Images className="w-3.5 h-3.5 text-amber-400" />
-            <span>Documentary Photography</span>
+        <ScrollReveal3D depth={-75} rotateX={5}>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
+              <Images className="w-3.5 h-3.5 text-amber-400" />
+              <span>Documentary Photography</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
+              {t.gallery.sectionTitle}
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              {t.gallery.sectionSubtitle}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
-            {t.gallery.sectionTitle}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            {t.gallery.sectionSubtitle}
-          </p>
-        </div>
+        </ScrollReveal3D>
 
         {/* Category Filters */}
-        <div className="flex items-center justify-center flex-wrap gap-2 mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              type="button"
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
-                selectedCategory === cat
-                  ? 'bg-emerald-800 text-amber-200 border border-amber-400/40 shadow-sm'
-                  : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 border border-emerald-900/30'
-              }`}
-            >
-              {cat === 'All' ? t.gallery.allPhotos : cat}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal3D delay={80} depth={-50} rotateX={3}>
+          <div className="flex items-center justify-center flex-wrap gap-2 mb-12">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
+                  selectedCategory === cat
+                    ? 'bg-emerald-800 text-amber-200 border border-amber-400/40 shadow-sm'
+                    : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 border border-emerald-900/30'
+                }`}
+              >
+                {cat === 'All' ? t.gallery.allPhotos : cat}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal3D>
 
-        {/* Masonry-Style Photo Grid */}
+        {/* Masonry-Style Photo Grid with 3D Z-axis entrance */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredGallery.map((item, index) => {
             const title =
@@ -123,11 +128,17 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ currentLang, gal
                 : item.captionEn;
 
             return (
-              <div
+              <ScrollReveal3D
                 key={item.id}
-                onClick={() => openLightbox(index)}
-                className="group relative rounded-2xl overflow-hidden glass-panel border border-emerald-800/30 cursor-pointer shadow-lg hover:border-amber-400/50 transition-all duration-300 transform hover:-translate-y-1"
+                delay={(index % 3) * 110}
+                depth={-85}
+                rotateX={5}
+                className="h-full"
               >
+                <div
+                  onClick={() => openLightbox(index)}
+                  className="group relative rounded-2xl overflow-hidden glass-panel border border-emerald-800/30 cursor-pointer shadow-lg hover:border-amber-400/50 transition-all duration-300 transform hover:-translate-y-1 h-full"
+                >
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
                   <img
                     src={item.imageUrl}
@@ -168,7 +179,8 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ currentLang, gal
                   </div>
                 </div>
 
-              </div>
+                </div>
+              </ScrollReveal3D>
             );
           })}
         </div>

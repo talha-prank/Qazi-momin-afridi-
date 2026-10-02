@@ -10,6 +10,7 @@ import {
   Check,
   Newspaper
 } from 'lucide-react';
+import { ScrollReveal3D } from './ScrollReveal3D';
 
 interface NewsSectionProps {
   currentLang: Language;
@@ -60,56 +61,61 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ currentLang, news }) =
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
-            <Newspaper className="w-3.5 h-3.5 text-amber-400" />
-            <span>Documented Media Record</span>
+        <ScrollReveal3D depth={-70} rotateX={5}>
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-800/40 text-xs font-medium text-emerald-400 mb-3">
+              <Newspaper className="w-3.5 h-3.5 text-amber-400" />
+              <span>Documented Media Record</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
+              {t.news.sectionTitle}
+            </h2>
+            <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+              {t.news.sectionSubtitle}
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white font-serif tracking-tight mb-4">
-            {t.news.sectionTitle}
-          </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            {t.news.sectionSubtitle}
-          </p>
-        </div>
+        </ScrollReveal3D>
 
         {/* Search & Category Filter Controls */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10 pb-6 border-b border-emerald-900/40">
-          {/* Search Input */}
-          <div className="relative w-full md:w-80">
-            <Search className="w-4 h-4 text-emerald-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder={t.news.searchPlaceholder}
-              className="w-full pl-10 pr-4 py-2 rounded-lg bg-[#051a12] border border-emerald-800/50 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors"
-            />
-          </div>
+        <ScrollReveal3D delay={80} depth={-45} rotateX={3}>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-10 pb-6 border-b border-emerald-900/40">
+            {/* Search Input */}
+            <div className="relative w-full md:w-80">
+              <Search className="w-4 h-4 text-emerald-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder={t.news.searchPlaceholder}
+                className="w-full pl-10 pr-4 py-2 rounded-lg bg-[#051a12] border border-emerald-800/50 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors"
+              />
+            </div>
 
-          {/* Categories */}
-          <div className="flex items-center gap-1.5 flex-wrap w-full md:w-auto">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer ${
-                  selectedCategory === cat
-                    ? 'bg-emerald-800 text-amber-200 border border-amber-400/40'
-                    : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 border border-emerald-900/40'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            {/* Categories */}
+            <div className="flex items-center gap-1.5 flex-wrap w-full md:w-auto">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors cursor-pointer ${
+                    selectedCategory === cat
+                      ? 'bg-emerald-800 text-amber-200 border border-amber-400/40'
+                      : 'bg-[#051a12]/80 text-slate-400 hover:text-slate-200 border border-emerald-900/40'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        </ScrollReveal3D>
 
         {/* Featured Story (if available and matching criteria) */}
         {featured && (!searchTerm || filteredNews.includes(featured)) && (
-          <div className="mb-14">
-            <div className="glass-panel rounded-2xl overflow-hidden border border-emerald-800/40 grid grid-cols-1 lg:grid-cols-12 group hover:border-amber-400/40 transition-all duration-300">
+          <ScrollReveal3D delay={120} depth={-85} rotateX={6} className="mb-14">
+            <div>
+              <div className="glass-panel rounded-2xl overflow-hidden border border-emerald-800/40 grid grid-cols-1 lg:grid-cols-12 group hover:border-amber-400/40 transition-all duration-300">
               
               <div className="lg:col-span-7 relative h-72 lg:h-auto overflow-hidden bg-slate-950">
                 <img
@@ -183,12 +189,13 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ currentLang, news }) =
               </div>
 
             </div>
-          </div>
+            </div>
+          </ScrollReveal3D>
         )}
 
         {/* Regular News Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {regularArticles.map((article) => {
+          {regularArticles.map((article, index) => {
             const title =
               currentLang === 'ur'
                 ? article.titleUr
@@ -204,10 +211,16 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ currentLang, news }) =
                 : article.excerptEn;
 
             return (
-              <div
+              <ScrollReveal3D
                 key={article.id}
-                className="glass-panel glass-panel-hover rounded-xl overflow-hidden border border-emerald-800/30 flex flex-col justify-between group"
+                delay={(index % 3) * 85}
+                depth={-75}
+                rotateX={5}
+                className="h-full"
               >
+                <div
+                  className="glass-panel glass-panel-hover rounded-xl overflow-hidden border border-emerald-800/30 flex flex-col justify-between group h-full"
+                >
                 <div>
                   <div className="relative h-44 overflow-hidden bg-slate-950">
                     <img
@@ -272,6 +285,7 @@ export const NewsSection: React.FC<NewsSectionProps> = ({ currentLang, news }) =
                 </div>
 
               </div>
+              </ScrollReveal3D>
             );
           })}
         </div>

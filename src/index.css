@@ -81,9 +81,69 @@
 .perspective-1000 {
   perspective: 1000px;
 }
+.perspective-1500 {
+  perspective: 1500px;
+}
 
 .transform-style-3d {
   transform-style: preserve-3d;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+.translate-z-30 {
+  transform: translateZ(30px);
+}
+.translate-z-40 {
+  transform: translateZ(40px);
+}
+.translate-z-50 {
+  transform: translateZ(50px);
+}
+
+@keyframes floatSlow3D {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(3deg) rotateY(-3deg);
+  }
+}
+
+@keyframes rotate3DPoly {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes liveGlowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.08);
+  }
+}
+
+.animate-float-3d {
+  animation: floatSlow3D 6s ease-in-out infinite;
+}
+
+.animate-rotate-3d-slow {
+  animation: rotate3DPoly 22s linear infinite;
+}
+
+.animate-glow-pulse {
+  animation: liveGlowPulse 4s ease-in-out infinite;
 }
 
 /* Custom discreet scrollbar */

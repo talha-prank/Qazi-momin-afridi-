@@ -29,6 +29,7 @@ import { SocialMediaSection } from './components/SocialMediaSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { AdminDashboard } from './components/AdminDashboard';
+import { SectionReveal3D } from './components/ScrollReveal3D';
 
 // Fallback verified state in case network hydration is loading
 const defaultProfile: Profile = {
@@ -49,7 +50,7 @@ const defaultProfile: Profile = {
     'قاضی مومن آفریدی ضلع خیبر، خیبر پختونخوا سے تعلق رکھنے والے ایک نمایاں عوامی اور سماجی رہنما ہیں۔ ان کی عوامی خدمات کا بنیادی محور قبائلی اضلاع کے انضمام کے بعد عوام کے بنیادی حقوق، تعلیمی اصلاحات، روایتی جرگہ نظام کے ذریعے قبائلی امن و آشتی کا فروغ، اور نوجوانوں کے لیے روزگار کے مواقع پیدا کرنا ہے۔',
   bioPs:
     'قاضی مومن اپریدی د خیبر پښتونخوا د خیبر ولسوالۍ یو پیژندل شوی ولسی او ټولنیز مشر دی. د ده هڅې او فعالیتونه د ادغام شویو سیمو د پرمختګ، روایتي جرګو له لارې د سولې ټینګښت، او د ځوانانو د روزنې لپاره دي.',
-  profilePhoto: '/src/assets/images/qazi_portrait_1790944357763.jpg',
+  profilePhoto: 'https://i.postimg.cc/qq9dHzdG/FB-IMG-1790968641902.jpg',
   coverPhoto: '/src/assets/images/khyber_mountains_1790944376566.jpg',
   languages: ['Pashto (Native)', 'Urdu (Fluent)', 'English (Professional)'],
   educationVerified: [
@@ -101,11 +102,11 @@ const defaultSiteSettings: SiteSettings = {
 };
 
 const defaultSocialLinks: SocialLinks = {
-  facebook: 'https://facebook.com/QaziMominAfridiOfficial',
+  facebook: 'https://www.facebook.com/share/14qgxW8VNEj/',
   twitter: 'https://x.com/QaziMominAfridi',
-  instagram: 'https://instagram.com/qazimominafridi',
+  instagram: 'https://www.instagram.com/qazimominafridi?stkn=M3J2ODl4dG14ejg5',
   youtube: 'https://youtube.com/@QaziMominAfridiOfficial',
-  tiktok: 'https://tiktok.com/@qazimominafridi',
+  tiktok: 'https://www.tiktok.com/@qazimominkhan4941?_r=1&_t=ZS-9AE7dae5vT6',
   whatsapp: 'https://wa.me/923000000000'
 };
 
@@ -179,37 +180,55 @@ export default function App() {
         />
 
         {/* Factual Biography & 3D Profile Card */}
-        <AboutSection currentLang={currentLang} profile={profile} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <AboutSection currentLang={currentLang} profile={profile} />
+        </SectionReveal3D>
 
         {/* Documented Public Service Activities */}
-        <ActivitiesSection currentLang={currentLang} activities={activities} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <ActivitiesSection currentLang={currentLang} activities={activities} />
+        </SectionReveal3D>
 
         {/* Political & Civic Journey 3D Vertical Timeline */}
-        <TimelineSection currentLang={currentLang} timeline={timeline} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <TimelineSection currentLang={currentLang} timeline={timeline} />
+        </SectionReveal3D>
 
         {/* News & Official Statements */}
-        <NewsSection currentLang={currentLang} news={news} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <NewsSection currentLang={currentLang} news={news} />
+        </SectionReveal3D>
 
         {/* Speeches & Media Archive */}
-        <VideosSection currentLang={currentLang} videos={videos} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <VideosSection currentLang={currentLang} videos={videos} />
+        </SectionReveal3D>
 
         {/* Masonry Photo Gallery */}
-        <GallerySection currentLang={currentLang} gallery={gallery} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <GallerySection currentLang={currentLang} gallery={gallery} />
+        </SectionReveal3D>
 
         {/* Public Record & Sources (Trust Index) */}
-        <SourcesSection
-          currentLang={currentLang}
-          activities={activities}
-          timeline={timeline}
-          news={news}
-          siteSettings={siteSettings}
-        />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <SourcesSection
+            currentLang={currentLang}
+            activities={activities}
+            timeline={timeline}
+            news={news}
+            siteSettings={siteSettings}
+          />
+        </SectionReveal3D>
 
         {/* Official Verified Social Handles */}
-        <SocialMediaSection currentLang={currentLang} socialLinks={socialLinks} />
+        <SectionReveal3D depth={-90} rotateX={4}>
+          <SocialMediaSection currentLang={currentLang} socialLinks={socialLinks} />
+        </SectionReveal3D>
 
         {/* Official Contact & Secretariat */}
-        <ContactSection currentLang={currentLang} siteSettings={siteSettings} />
+        <SectionReveal3D depth={-100} rotateX={4}>
+          <ContactSection currentLang={currentLang} siteSettings={siteSettings} />
+        </SectionReveal3D>
       </main>
 
       {/* Premium Footer */}
